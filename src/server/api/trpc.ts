@@ -80,7 +80,7 @@ export const createTRPCContext = async (opts: CreateNextContextOptions) => {
 };
 
 /* Clerk */
-export const createContext = async (opts: CreateNextContextOptions) => {
+export const createContext = (opts: CreateNextContextOptions) => {
   const auth = getAuth(opts.req);
   return createContextInner({ auth });
 };

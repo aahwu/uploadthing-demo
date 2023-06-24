@@ -81,7 +81,8 @@ export const createTRPCContext = async (opts: CreateNextContextOptions) => {
 
 /* Clerk */
 export const createContext = async (opts: CreateNextContextOptions) => {
-  return await createContextInner({ auth: getAuth(opts.req) });
+  const auth = getAuth(opts.req);
+  return createContextInner({ auth });
 };
 
 /**

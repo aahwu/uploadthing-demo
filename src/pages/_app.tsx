@@ -1,7 +1,5 @@
-import { type Session } from "next-auth";
-import { SessionProvider } from "next-auth/react";
 import { ClerkProvider } from "@clerk/nextjs";
-import { AppProps, type AppType } from "next/app";
+import { AppProps } from "next/app";
 import { api } from "~/utils/api";
 import "~/styles/globals.css";
 import Head from "next/head";

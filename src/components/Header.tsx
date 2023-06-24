@@ -1,11 +1,4 @@
-import {
-  SignInButton,
-  SignOutButton,
-  UserButton,
-  useAuth,
-  useUser,
-} from "@clerk/nextjs";
-import { signIn, signOut, useSession } from "next-auth/react";
+import { SignInButton, UserButton, useUser } from "@clerk/nextjs";
 import Link from "next/link";
 
 export function Header() {

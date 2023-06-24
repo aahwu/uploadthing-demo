@@ -1,11 +1,8 @@
-import { signIn, signOut, useSession } from "next-auth/react";
 import Head from "next/head";
-import Link from "next/link";
 import { api } from "~/utils/api";
 import { UploadButton } from "~/utils/uploadthing";
 import "@uploadthing/react/styles.css";
-import ImagePreview from "~/components/ImagePreview";
-import { useAuth, useUser } from "@clerk/nextjs";
+import { useUser } from "@clerk/nextjs";
 
 export default function Home() {
   const { user } = useUser();

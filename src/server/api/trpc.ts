@@ -55,7 +55,7 @@ const createInnerTRPCContext = (opts: CreateContextOptions) => {
 };
 
 /* Clerk */
-export const createContextInner = async ({ auth }: AuthContext) => {
+export const createContextInner = ({ auth }: AuthContext) => {
   return {
     auth,
     prisma,

@@ -23,6 +23,7 @@ export const imageRouter = createTRPCRouter({
       where: { userId: currentUserId },
       select: {
         url: true,
+        id: true,
       },
     });
     return imageUrl;
